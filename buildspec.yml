@@ -1,0 +1,17 @@
+version: 0.2
+
+run-as: ubuntu
+
+phases:
+  install:
+    run-as: ubuntu
+    runtime-versions:
+      nodejs: 10
+
+artifacts:
+  files:
+    - /index.html
+  name: artifact-name
+    - source: /
+      destination: /var/www/html
+#  base-directory: /var/www/html/
