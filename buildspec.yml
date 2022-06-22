@@ -1,17 +1,11 @@
 version: 0.2
 
-run-as: ubuntu
-
 phases:
-  install:
-    run-as: ubuntu
-    runtime-versions:
-      nodejs: 10
-
-artifacts:
-  files:
-    - /index.js
-  name: artifact-name
-    - source: /
-      destination: /var/www/html
-#  base-directory: /var/www/html/
+  pre_build:
+   commands:
+       - echo "creating nodejs folder"
+       - mkdir -p ./vipulnodejs/
+  build:
+    commands:
+        - echo "Copying the file"
+        - cp index.js ./vipulnodejs/
