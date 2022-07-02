@@ -9,3 +9,6 @@ phases:
     commands:
         - echo "Copying the file"
         - cp index.js ./vipulnodejs/
+artifacts:
+  files:
+    - '**/*'
