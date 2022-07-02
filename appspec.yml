@@ -1,0 +1,12 @@
+version: 0.0
+os: ubuntu
+files:
+  - source: /
+    destination: /vipul
+hooks:
+  BeforeInstall:
+    - location: /vipul/BeforeInstallHook.sh
+      timeout: 300
+  AfterInstall:
+    - location: /vipul/AfterInstallHook.sh
+      timeout: 300
