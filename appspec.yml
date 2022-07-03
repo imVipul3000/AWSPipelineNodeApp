@@ -1,12 +1,13 @@
 version: 0.0
-os: linux
+os: ubuntu
 files:
   - source: /
-    destination: /vipul
+    destination: /var/vipul/
 hooks:
   BeforeInstall:
-    - location: /vipul/BeforeInstallHook.sh
+    - location: /var/vipul/BeforeInstallHook.sh
       timeout: 300
   AfterInstall:
-    - location: /vipul/AfterInstallHook.sh
+    - location: /var/vipul/AfterInstallHook.sh
       timeout: 300
+
