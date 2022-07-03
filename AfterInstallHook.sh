@@ -1,4 +1,6 @@
 #!/bin/bash
 set -e
+echo "installing NPM"
 npm install
-node index.js
+echo "running index.js"
+node ./index.js
