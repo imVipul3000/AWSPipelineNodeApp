@@ -5,9 +5,9 @@ files:
     destination: /var/vipul/
 hooks:
   BeforeInstall:
-    - location: /var/vipul/BeforeInstallHook.sh
+    - location: BeforeInstallHook.sh
       timeout: 300
   AfterInstall:
-    - location: /var/vipul/AfterInstallHook.sh
+    - location: AfterInstallHook.sh
       timeout: 300
 
